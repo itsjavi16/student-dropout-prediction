@@ -1,4 +1,5 @@
-﻿name: dropout-prediction
+﻿# Run `conda env create -f environment.yml` to create the conda environment.
+name: dropout-prediction
 channels:
   - conda-forge
   - defaults
