@@ -4,16 +4,13 @@ Preprocessing pipeline: stratified split, scaling, one-hot encoding.
 Column groups are defined here once so every notebook (EDA, modeling,
 GPA trajectory) uses the same definitions.
 """
-
-from os import path
 from pathlib import Path
+
 import pandas as pd
 from sklearn.compose import ColumnTransformer
+from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.model_selection import train_test_split
-
-
 
 RAW_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "dataset.csv"
 TARGET_COL = "Target"
@@ -101,11 +98,10 @@ def build_preprocessor() -> ColumnTransformer:
     )
 
 def build_logreg_pipeline(model) -> Pipeline:
-    """
-    Returns a preprocessing pipeline that applies the ColumnTransformer to the data.
-    """
-    preprocessor = build_preprocessor()
-    return Pipeline(steps=[("preprocessor", preprocessor)])
+    """Wrap the preprocessor + a classifier in a single Pipeline so
+    fit/predict handles preprocessing automatically and consistently
+    between train and test."""
+    return Pipeline(steps=[("preprocess", build_preprocessor()), ("model", model)])
 
 if __name__ == "__main__":
     df = load_data()
