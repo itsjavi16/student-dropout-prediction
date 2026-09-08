@@ -9,14 +9,14 @@ from os import path
 from pathlib import Path
 import pandas as pd
 from sklearn.compose import ColumnTransformer
-from sklearn.model_selection import train_test_split
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
+from sklearn.model_selection import train_test_split
 
 
 
 RAW_PATH = Path(__file__).resolve().parents[1] / "data" / "raw" / "dataset.csv"
-target_col = "target"
+TARGET_COL = "Target"
 
 
 # Nominal categorical columns: coded as intergers in the raw file
@@ -68,12 +68,19 @@ NUMERIC_COLS = [
 ]
 
 def load_data(path: Path = RAW_PATH) -> pd.DataFrame:
-    return pd.read_csv(path)
+    df = pd.read_csv(path)
+    df.columns = [c.strip() for c in df.columns]
+    return df
+
 
 def stratified_split(df: pd.DataFrame, test_size: float = 0.2, random_state: int = 42):
-    x = df.drop(columns=[target_col])
-    y = df[target_col]
-    return train_test_split(x, y, test_size=test_size, stratify=y, random_state=random_state)
+    """80/20 stratified split on Target, so class proportions
+    (Graduate ~50%, Dropout ~32%, Enrolled ~18%) are preserved in both sets."""
+    X = df.drop(columns=[TARGET_COL])
+    y = df[TARGET_COL]
+    return train_test_split(
+        X, y, test_size=test_size, random_state=random_state, stratify=y
+    )
 
 def build_preprocessor() -> ColumnTransformer:
     """
@@ -93,7 +100,7 @@ def build_preprocessor() -> ColumnTransformer:
         ]
     )
 
-def build_preprocessing_pipeline() -> Pipeline:
+def build_logreg_pipeline(model) -> Pipeline:
     """
     Returns a preprocessing pipeline that applies the ColumnTransformer to the data.
     """

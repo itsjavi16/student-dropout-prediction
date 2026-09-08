@@ -9,7 +9,7 @@ from sklearn.utils.class_weight import compute_sample_weight
 from xgboost import XGBClassifier
 
 
-def get_logistic_regression_model(random_state=42) -> LogisticRegression:
+def get_logistic_regression(random_state=42) -> LogisticRegression:
     """
     Returns a Logistic Regression model with class_weights = "balanced".
     Reweights the loss inversely proportional to class frequencies, so erros such as
@@ -19,7 +19,7 @@ def get_logistic_regression_model(random_state=42) -> LogisticRegression:
     return LogisticRegression(
         max_iter=1000, class_weight="balanced", random_state=42)
 
-def get_random_forest_model(random_state=42) -> RandomForestClassifier:
+def get_random_forest(random_state=42) -> RandomForestClassifier:
     """
     Returns a Random Forest model with class_weights = "balanced".
     """
@@ -30,7 +30,7 @@ def get_random_forest_model(random_state=42) -> RandomForestClassifier:
         n_jobs=-1
         )
 
-def get_xgboost_model(random_state=42) -> XGBClassifier:
+def get_xgboost(random_state=42) -> XGBClassifier:
     """
     Returns an XGBoost model with scale_pos_weight = 1.
     """
@@ -51,7 +51,7 @@ def get_xgb_sample_weight(y_train) -> np.ndarray:
     return compute_sample_weight(class_weight="balanced", y=y_train)
 
 MODEL_REGISTRY = {
-    "logistic_regression": get_logistic_regression_model,
-    "random_forest": get_random_forest_model,
-    "xgboost": get_xgboost_model,
+    "logistic_regression": get_logistic_regression,
+    "random_forest": get_random_forest,
+    "xgboost": get_xgboost,
 }
