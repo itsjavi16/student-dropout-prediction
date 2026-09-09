@@ -103,6 +103,91 @@ def build_logreg_pipeline(model) -> Pipeline:
     between train and test."""
     return Pipeline(steps=[("preprocess", build_preprocessor()), ("model", model)])
 
+
+def build_preprocessor_for_features(feature_cols, scale_numeric=True):
+    """
+    Build a preprocessing pipeline using only the predictors included in feature_cols.
+
+    Parameters
+    ----------
+    feature_cols : list
+        Predictor columns available for the current model.
+
+    scale_numeric : bool
+        If True, standardize numeric predictors. Useful for Logistic Regression.
+        If False, pass numeric predictors through unchanged. Useful for tree-based models such as Random Forest.
+    """
+
+    # Only use variables that are actually present
+    numeric_cols = [
+        col for col in NUMERIC_COLS
+        if col in feature_cols
+    ]
+
+    categorical_cols = [
+        col for col in CATEGORICAL_COLS
+        if col in feature_cols
+    ]
+
+    binary_cols = [
+        col for col in BINARY_COLS
+        if col in feature_cols
+    ]
+
+    numeric_transformer = (
+        StandardScaler()
+        if scale_numeric
+        else "passthrough"
+    )
+
+    return ColumnTransformer(
+        transformers=[
+            (
+                "num",
+                numeric_transformer,
+                numeric_cols
+            ),
+            (
+                "cat",
+                OneHotEncoder(
+                    handle_unknown="ignore",
+                    sparse_output=False
+                ),
+                categorical_cols
+            ),
+            (
+                "bin",
+                "passthrough",
+                binary_cols
+            ),
+        ]
+    )
+
+def build_model_pipeline(
+    model,
+    feature_cols,
+    scale_numeric=True
+):
+    """
+    Combine preprocessing and a classification model
+    into one reusable sklearn Pipeline.
+    """
+
+    return Pipeline(
+        steps=[
+            (
+                "preprocess",
+                build_preprocessor_for_features(
+                    feature_cols,
+                    scale_numeric=scale_numeric
+                )
+            ),
+            ("model", model)
+        ]
+    )
+
+
+
 if __name__ == "__main__":
     df = load_data()
     X_train, X_test, y_train, y_test = stratified_split(df)
