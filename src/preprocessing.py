@@ -46,6 +46,8 @@ BINARY_COLS = [
 # True numeric columns: these are continuous variables that can be scaled for Logistic Regression.
 NUMERIC_COLS = [
     "Application order",
+    "Previous qualification (grade)",
+    "Admission grade",
     "Age at enrollment",
     "Curricular units 1st sem (credited)",
     "Curricular units 1st sem (enrolled)",
@@ -68,6 +70,29 @@ def load_data(path: Path = RAW_PATH) -> pd.DataFrame:
     df = pd.read_csv(path)
     df.columns = [c.strip() for c in df.columns]
     return df
+
+
+def get_feature_availability_sets(df: pd.DataFrame, extra_exclude: list = None) -> dict:
+    """
+    Three predictor sets representing different points in a student's
+    academic progression, for the feature-availability comparison:
+    - "Day 1": before any semester performance exists
+    - "After Semester 1": semester 1 performance known, semester 2 not yet
+    - "Full Data": both semesters known
+
+    extra_exclude: columns to drop from all three sets (e.g. a temporary
+    EDA column like "Sem1 grade zero" that isn't a real predictor).
+    """
+    extra_exclude = extra_exclude or []
+    sem1_cols = [c for c in df.columns if "Curricular units 1st sem" in c]
+    sem2_cols = [c for c in df.columns if "Curricular units 2nd sem" in c]
+
+    exclude_common = [TARGET_COL] + extra_exclude
+    return {
+        "Day 1": [c for c in df.columns if c not in sem1_cols + sem2_cols + exclude_common],
+        "After Semester 1": [c for c in df.columns if c not in sem2_cols + exclude_common],
+        "Full Data": [c for c in df.columns if c not in exclude_common],
+    }
 
 
 def stratified_split(df: pd.DataFrame, test_size: float = 0.2, random_state: int = 42):
