@@ -16,3 +16,4 @@ reports/figures/*.png
 !reports/figures/.gitkeep
 .vscode/
 .idea/
+*.code-workspace
