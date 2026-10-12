@@ -2,7 +2,6 @@
 Shared evaluation utilities so all three models are compared consistently.
 """
 import pandas as pd
-
 from sklearn.metrics import (
     accuracy_score,
     classification_report,
@@ -10,10 +9,10 @@ from sklearn.metrics import (
     f1_score,
     recall_score,
 )
-from sklearn.model_selection import train_test_split, StratifiedKFold
+from sklearn.model_selection import StratifiedKFold, train_test_split
 from sklearn.preprocessing import LabelEncoder
 
-from src.models import get_xgboost, get_xgb_sample_weight
+from src.models import get_xgb_sample_weight, get_xgboost
 
 
 def evaluate_model(model, X_test, y_test) -> dict:
@@ -106,8 +105,9 @@ def evaluate_regression_feature_set(
 
     Set return_split=True to also get back (pipe, X_test, y_test, y_pred).
     """
-    from src.preprocessing import build_model_pipeline  # local import avoids a cycle
     from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+
+    from src.preprocessing import build_model_pipeline  # local import avoids a cycle
 
     X = df[feature_cols]
     y = df[target_col]

@@ -72,7 +72,7 @@ def load_data(path: Path = RAW_PATH) -> pd.DataFrame:
     return df
 
 
-def get_feature_availability_sets(df: pd.DataFrame, extra_exclude: list = None) -> dict:
+def get_feature_availability_sets(df: pd.DataFrame, extra_exclude: list | None = None) -> dict:
     """
     Three predictor sets representing different points in a student's
     academic progression, for the feature-availability comparison:
