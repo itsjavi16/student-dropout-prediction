@@ -6,7 +6,6 @@ machine learning can classify a student's outcome: **Dropout**,
 **Enrolled**, or **Graduate** from demographic, socioeconomic, academic
 path, and macroeconomic variables available at or near enrollment.
 
-
 ## Notebooks
 
 Run in order. Notebooks 3, 4 and 5 each save a results table to
@@ -21,6 +20,9 @@ Run in order. Notebooks 3, 4 and 5 each save a results table to
 | 05 | `05_xgboost.ipynb` | Same feature-availability comparison with XGBoost, plus 5-fold CV |
 | 06 | `06_gpa_trajectory.ipynb` | Secondary question: predicting semester GPA and GPA decline vs. dropout |
 | 07 | `07_model_comparison.ipynb` | Logistic Regression vs. Random Forest vs. XGBoost (uses outputs of 03-05) |
+| 08 | `08_sem1_mechanism_ablation.ipynb` | Which Semester-1 information (grade, approved units, activity, credits) drives the Day 1 → Semester 1 gain |
+| 09 | `09_class_specific_error_analysis.ipynb` | Why Enrolled is hard to predict: where Enrolled students get misclassified and why |
+| — | `assumptions_checks.ipynb` | Statistical tests and model-assumption checks for notebooks 01-07 |
 
 ## Data source
 
