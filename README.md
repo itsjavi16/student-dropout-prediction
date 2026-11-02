@@ -22,6 +22,9 @@ Run in order. Notebooks 3, 4 and 5 each save a results table to
 | 07 | `07_model_comparison.ipynb` | Logistic Regression vs. Random Forest vs. XGBoost (uses outputs of 03-05) |
 | 08 | `08_sem1_mechanism_ablation.ipynb` | Which Semester-1 information (grade, approved units, activity, credits) drives the Day 1 → Semester 1 gain |
 | 09 | `09_class_specific_error_analysis.ipynb` | Why Enrolled is hard to predict: where Enrolled students get misclassified and why |
+| 10 | `10_dropout_error_analysis.ipynb` | Dropout-focused early warning: Dropout precision/recall, where missed dropouts go, training-CV-selected risk thresholds |
+| 11 | `11_pooling.ipynb` | Round 3 feedback: association tests with Enrolled pooled (Dropout vs. not, Enrolled vs. Graduate), power for small groups, macro variables as cohorts |
+| 12 | `12_grade_swings.ipynb` | Round 3 feedback: why grade swings between semesters come with more dropout (grade averages passed units only; pass-rate change explains the U-shape) |
 | — | `assumptions_checks.ipynb` | Statistical tests and model-assumption checks for notebooks 01-07 |
 
 ## Data source

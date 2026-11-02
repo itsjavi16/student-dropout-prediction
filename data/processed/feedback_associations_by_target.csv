@@ -1,0 +1,181 @@
+Target,Predictor,Type,Effect size,Effect measure,p-value,p (BH-adjusted),Significant
+3-class,Marital status,Categorical,0.08126253562026481,Cramér's V,9.381042492564634e-11,1.6718689590709248e-10,True
+3-class,Application mode,Categorical,0.22338383168103218,Cramér's V,1.9378898501638963e-82,1.245786332248219e-81,True
+3-class,Course,Categorical,0.25119166123978515,Cramér's V,2.3165709040666167e-97,1.8129685336173523e-96,True
+3-class,Previous qualification,Categorical,0.13676881266653862,Cramér's V,4.0310215909791185e-33,1.1894817809446578e-32,True
+3-class,Nacionality,Categorical,0.017009176463002353,Cramér's V,0.5273143969362435,0.5649797110031181,False
+3-class,Mother's qualification,Categorical,0.12318515708071749,Cramér's V,8.577038656153977e-23,2.1148862439831722e-22,True
+3-class,Father's qualification,Categorical,0.12901930501331949,Cramér's V,2.0150878746506313e-25,5.256750977349472e-25,True
+3-class,Mother's occupation,Categorical,0.0989154610760176,Cramér's V,1.0659037401193603e-11,2.0410922683136686e-11,True
+3-class,Father's occupation,Categorical,0.09240727174911825,Cramér's V,2.2019175013351046e-08,3.570677029192061e-08,True
+3-class,Daytime/evening attendance,Categorical,0.08060005706292019,Cramér's V,5.743834299642735e-07,8.544546892030515e-07,True
+3-class,Displaced,Categorical,0.11425736639872303,Cramér's V,2.8763109461402946e-13,5.950988164428196e-13,True
+3-class,Educational special needs,Categorical,0.012046946962109829,Cramér's V,0.7254049737386095,0.7461308301311411,False
+3-class,Debtor,Categorical,0.24211489977791273,Cramér's V,4.858552123231672e-57,2.082236624242145e-56,True
+3-class,Tuition fees up to date,Categorical,0.4314576214556677,Cramér's V,1.4716282631420466e-179,1.558194631562167e-178,True
+3-class,Gender,Categorical,0.2296246802568394,Cramér's V,2.2224795668092454e-51,7.844045529914984e-51,True
+3-class,Scholarship holder,Categorical,0.30440670047871277,Cramér's V,9.593930375514133e-90,6.907629870370175e-89,True
+3-class,International,Categorical,0.017009176463002353,Cramér's V,0.5273143969362435,0.5649797110031181,False
+3-class,Application order,Numeric,0.010247370133397937,ε²,5.347474230908454e-11,9.821891444525733e-11,True
+3-class,Previous qualification (grade),Numeric,0.013950899053478561,ε²,1.4884405247897423e-14,3.2673084690506537e-14,True
+3-class,Admission grade,Numeric,0.016112799658687445,ε²,1.2510933417072028e-16,2.8871384808627754e-16,True
+3-class,Age at enrollment,Numeric,0.08439423727871738,ε²,3.5201940675149055e-82,2.184948041905803e-81,True
+3-class,Curricular units 1st sem (credited),Numeric,9.227900270953105e-05,ε²,0.29999702066574946,0.34394562878875734,False
+3-class,Curricular units 1st sem (enrolled),Numeric,0.055330724407070576,ε²,2.80394882936413e-54,1.121579531745652e-53,True
+3-class,Curricular units 1st sem (evaluations),Numeric,0.029101737433948203,ε²,4.244300818306241e-29,1.1937096051486302e-28,True
+3-class,Curricular units 1st sem (approved),Numeric,0.3528024101028517,ε²,0.0,0.0,True
+3-class,Curricular units 1st sem (grade),Numeric,0.24704512226535102,ε²,2.5143375393667276e-238,3.4813904391231616e-237,True
+3-class,Curricular units 1st sem (without evaluations),Numeric,0.00692300039029857,ε²,8.309408119141869e-08,1.3006030099526405e-07,True
+3-class,Curricular units 2nd sem (credited),Numeric,0.0011592464313930106,ε²,0.028367412591495358,0.035214719079097685,True
+3-class,Curricular units 2nd sem (enrolled),Numeric,0.0607852305232425,ε²,1.6270497654590534e-59,7.32172394456574e-59,True
+3-class,Curricular units 2nd sem (evaluations),Numeric,0.04092884687214044,ε²,1.877963056552687e-40,6.0363098246336375e-40,True
+3-class,Curricular units 2nd sem (approved),Numeric,0.42756762989098884,ε²,0.0,0.0,True
+3-class,Curricular units 2nd sem (grade),Numeric,0.31412154029064476,ε²,1.0151468397468805e-302,2.61037758792055e-301,True
+3-class,Curricular units 2nd sem (without evaluations),Numeric,0.008311029290388032,ε²,3.8641262551459034e-09,6.50039930772208e-09,True
+3-class,Unemployment rate,Numeric,0.002461132551303175,ε²,0.0015958743603225053,0.002127832480430007,True
+3-class,Inflation rate,Numeric,9.902079378808296e-05,ε²,0.295559394809934,0.3410300709345392,False
+3-class,GDP,Numeric,0.0028072838838429435,ε²,0.0007424900966400955,0.0009973747566807253,True
+Dropout vs. not,Marital status,Categorical,0.11392272761517568,Cramér's V,2.0942250108380984e-12,4.188450021676197e-12,True
+Dropout vs. not,Application mode,Categorical,0.2959910181786542,Cramér's V,6.07997209532437e-78,3.4199843036199583e-77,True
+Dropout vs. not,Course,Categorical,0.25965320720362695,Cramér's V,5.832502227810086e-54,2.233724257459182e-53,True
+Dropout vs. not,Previous qualification,Categorical,0.189079715943195,Cramér's V,3.621302439917708e-33,1.0863907319753124e-32,True
+Dropout vs. not,Nacionality,Categorical,0.010359654908854278,Cramér's V,0.49078969568460307,0.5354069407468397,False
+Dropout vs. not,Mother's qualification,Categorical,0.18692896881776608,Cramér's V,4.4164912804414325e-30,1.2618546515546951e-29,True
+Dropout vs. not,Father's qualification,Categorical,0.17883260143969482,Cramér's V,2.483566512481615e-27,6.672268242487922e-27,True
+Dropout vs. not,Mother's occupation,Categorical,0.18938898326576217,Cramér's V,6.064917471546954e-29,1.6795156075053105e-28,True
+Dropout vs. not,Father's occupation,Categorical,0.1735325274219372,Cramér's V,1.3900646978597892e-22,3.3812384542535415e-22,True
+Dropout vs. not,Daytime/evening attendance,Categorical,0.08049877148123116,Cramér's V,8.59227514692058e-08,1.333284074522159e-07,True
+Dropout vs. not,Displaced,Categorical,0.10723239484077354,Cramér's V,9.865877630406452e-13,1.9953460376102934e-12,True
+Dropout vs. not,Educational special needs,Categorical,0.002805596852315367,Cramér's V,0.8519671291409596,0.8581701321744628,False
+Dropout vs. not,Debtor,Categorical,0.22940731153092372,Cramér's V,1.4430159800207284e-52,5.411309925077731e-52,True
+Dropout vs. not,Tuition fees up to date,Categorical,0.4291492845262439,Cramér's V,3.327427731275458e-179,3.327427731275458e-178,True
+Dropout vs. not,Gender,Categorical,0.20398261053413663,Cramér's V,6.23915001285147e-42,2.0419036405695717e-41,True
+Dropout vs. not,Scholarship holder,Categorical,0.24535391647177576,Cramér's V,7.199903789531267e-60,3.3230325182452e-59,True
+Dropout vs. not,International,Categorical,0.010359654908854278,Cramér's V,0.49078969568460307,0.5354069407468397,False
+Dropout vs. not,Application order,Numeric,0.0066517364630872865,ε²,3.490041227092414e-08,5.608994829255665e-08,True
+Dropout vs. not,Previous qualification (grade),Numeric,0.0061444658367108464,ε²,1.1106600730251883e-07,1.7087078046541357e-07,True
+Dropout vs. not,Admission grade,Numeric,0.009492542533678395,ε²,5.5414865655642433e-11,1.0075430119207714e-10,True
+Dropout vs. not,Age at enrollment,Numeric,0.07821155858273925,ε²,2.0548314178576247e-77,1.12081713701325e-76,True
+Dropout vs. not,Curricular units 1st sem (credited),Numeric,0.0,ε²,0.42389457515154694,0.4768813970454903,False
+Dropout vs. not,Curricular units 1st sem (enrolled),Numeric,0.03221748408591693,ε²,4.649494647220162e-33,1.3498532846768212e-32,True
+Dropout vs. not,Curricular units 1st sem (evaluations),Numeric,0.002780476849062861,ε²,0.0002660767204251217,0.00036283189148880236,True
+Dropout vs. not,Curricular units 1st sem (approved),Numeric,0.2732406170896124,ε²,5.897582871268372e-265,1.0615649168283071e-263,True
+Dropout vs. not,Curricular units 1st sem (grade),Numeric,0.19574029090263095,ε²,1.8224371965942404e-190,2.0502418461685205e-189,True
+Dropout vs. not,Curricular units 1st sem (without evaluations),Numeric,0.003184114131368576,ε²,0.00010304099300199506,0.00014490139640905555,True
+Dropout vs. not,Curricular units 2nd sem (credited),Numeric,0.0002483182373928435,ε²,0.14748585233401715,0.17581094980213965,False
+Dropout vs. not,Curricular units 2nd sem (enrolled),Numeric,0.03524329690482194,ε²,5.5313596356737284e-36,1.7467451481074934e-35,True
+Dropout vs. not,Curricular units 2nd sem (evaluations),Numeric,0.01398714492381577,ε²,2.2293286680631198e-15,5.01598950314202e-15,True
+Dropout vs. not,Curricular units 2nd sem (approved),Numeric,0.33801945189259397,ε²,0.0,0.0,True
+Dropout vs. not,Curricular units 2nd sem (grade),Numeric,0.2599559101343841,ε²,3.449677168843624e-252,5.174515753265436e-251,True
+Dropout vs. not,Curricular units 2nd sem (without evaluations),Numeric,0.004118672999403636,ε²,1.1692845658899934e-05,1.6704065226999906e-05,True
+Dropout vs. not,Unemployment rate,Numeric,0.0,ε²,0.5260313770907479,0.5649797110031181,False
+Dropout vs. not,Inflation rate,Numeric,0.0003107252312260904,ε²,0.12336844533569695,0.15004270378665846,False
+Dropout vs. not,GDP,Numeric,0.0029782688083910508,ε²,0.00016702070107027888,0.00023125943225115538,True
+Graduate vs. not,Marital status,Categorical,0.08302463673437376,Cramér's V,1.0857797275010993e-06,1.5889459426845355e-06,True
+Graduate vs. not,Application mode,Categorical,0.25069950205304603,Cramér's V,1.170836284471543e-54,4.789784800110858e-54,True
+Graduate vs. not,Course,Categorical,0.33351246794460027,Cramér's V,1.5575007276358034e-94,1.1681255457268527e-93,True
+Graduate vs. not,Previous qualification,Categorical,0.11499625766332568,Cramér's V,5.982153339768735e-12,1.1704213056069266e-11,True
+Graduate vs. not,Nacionality,Categorical,0.002686746564035342,Cramér's V,0.8581701321744628,0.8581701321744628,False
+Graduate vs. not,Mother's qualification,Categorical,0.13052323389877107,Cramér's V,1.2070192763356496e-13,2.5263194155862434e-13,True
+Graduate vs. not,Father's qualification,Categorical,0.12844769644309015,Cramér's V,3.666183985250446e-13,7.499012697103185e-13,True
+Graduate vs. not,Mother's occupation,Categorical,0.11114611803281157,Cramér's V,3.668149718299743e-08,5.843070347734104e-08,True
+Graduate vs. not,Father's occupation,Categorical,0.11136011806125848,Cramér's V,1.9156959383012447e-07,2.922248041476475e-07,True
+Graduate vs. not,Daytime/evening attendance,Categorical,0.05823473849326732,Cramér's V,0.0001073379076661634,0.00014977382465046057,True
+Graduate vs. not,Displaced,Categorical,0.10232921143470268,Cramér's V,1.0018332347400113e-11,1.9390320672387313e-11,True
+Graduate vs. not,Educational special needs,Categorical,0.010441088170280149,Cramér's V,0.4873876759514163,0.5354069407468397,False
+Graduate vs. not,Debtor,Categorical,0.21384498844944866,Cramér's V,6.5488769974099065e-46,2.1829589991366356e-45,True
+Graduate vs. not,Tuition fees up to date,Categorical,0.3271972345912051,Cramér's V,5.2120452615654884e-105,4.2644006685535816e-104,True
+Graduate vs. not,Gender,Categorical,0.21675388831506465,Cramér's V,4.0463431214442488e-47,1.374229739358424e-46,True
+Graduate vs. not,Scholarship holder,Categorical,0.29948427062275734,Cramér's V,2.749374974044269e-88,1.9034134435691097e-87,True
+Graduate vs. not,International,Categorical,0.002686746564035342,Cramér's V,0.8581701321744628,0.8581701321744628,False
+Graduate vs. not,Application order,Numeric,0.010153931112795795,ε²,1.2440255250942727e-11,2.357100994915464e-11,True
+Graduate vs. not,Previous qualification (grade),Numeric,0.01416125389149012,ε²,1.5080791906725542e-15,3.436129801532402e-15,True
+Graduate vs. not,Admission grade,Numeric,0.01611583152838976,ε²,1.8823068359507167e-17,4.4580951377780136e-17,True
+Graduate vs. not,Age at enrollment,Numeric,0.06251592797644975,ε²,2.7057607748140885e-62,1.3163160526122594e-61,True
+Graduate vs. not,Curricular units 1st sem (credited),Numeric,0.00029341119089979796,ε²,0.1295853977985804,0.15550247735829645,False
+Graduate vs. not,Curricular units 1st sem (enrolled),Numeric,0.05486973676896678,ε²,6.343965440050487e-55,2.655613440021134e-54,True
+Graduate vs. not,Curricular units 1st sem (evaluations),Numeric,0.0062897406371846465,ε²,7.970466446648316e-08,1.2584947021023656e-07,True
+Graduate vs. not,Curricular units 1st sem (approved),Numeric,0.31832567998849054,ε²,2.791116119413083e-308,8.37334835823925e-307,True
+Graduate vs. not,Curricular units 1st sem (grade),Numeric,0.2197135197712979,ε²,1.644182017724716e-213,1.9730184212696593e-212,True
+Graduate vs. not,Curricular units 1st sem (without evaluations),Numeric,0.007146919160212128,ε²,1.1300079176661808e-08,1.8660681209166288e-08,True
+Graduate vs. not,Curricular units 2nd sem (credited),Numeric,0.001331354913303673,ε²,0.008681265276599116,0.011161626784198863,True
+Graduate vs. not,Curricular units 2nd sem (enrolled),Numeric,0.060289156647038065,ε²,3.786878566783476e-60,1.7937845842658572e-59,True
+Graduate vs. not,Curricular units 2nd sem (evaluations),Numeric,0.0012072245901840809,ε²,0.011815493303668448,0.014977385877889582,True
+Graduate vs. not,Curricular units 2nd sem (approved),Numeric,0.3806424791938761,ε²,0.0,0.0,True
+Graduate vs. not,Curricular units 2nd sem (grade),Numeric,0.2699386941771084,ε²,8.788136604773607e-262,1.4380587171447722e-260,True
+Graduate vs. not,Curricular units 2nd sem (without evaluations),Numeric,0.008530243971252842,ε²,4.88985900023241e-10,8.545384660600329e-10,True
+Graduate vs. not,Unemployment rate,Numeric,0.0008012670751636053,ε²,0.033049695305457955,0.04074619969166049,True
+Graduate vs. not,Inflation rate,Numeric,0.00012265730515130267,ε²,0.21426231912795346,0.25072230260072803,False
+Graduate vs. not,GDP,Numeric,0.0017321746581242699,ε²,0.0032532907746702306,0.004274396638252858,True
+Enrolled vs. Graduate,Marital status,Categorical,0.02048987429497138,Cramér's V,0.5323882964340914,0.5670407891013991,False
+Enrolled vs. Graduate,Application mode,Categorical,0.13805634069074832,Cramér's V,5.365909013791237e-10,9.287150216177141e-10,True
+Enrolled vs. Graduate,Course,Categorical,0.3152181849848312,Cramér's V,5.507022400910253e-54,2.1549218090518384e-53,True
+Enrolled vs. Graduate,Previous qualification,Categorical,0.06908520239469806,Cramér's V,0.002485653207164039,0.003289835127128875,True
+Enrolled vs. Graduate,Nacionality,Categorical,0.016029486471056766,Cramér's V,0.37972125493420517,0.4298731187934398,False
+Enrolled vs. Graduate,Mother's qualification,Categorical,0.07959998983306225,Cramér's V,0.004117468380979229,0.005370610931712038,True
+Enrolled vs. Graduate,Father's qualification,Categorical,0.04856742540179017,Cramér's V,0.21450685889173396,0.25072230260072803,False
+Enrolled vs. Graduate,Mother's occupation,Categorical,0.07883864279444217,Cramér's V,0.016756176173401742,0.021091690288197996,True
+Enrolled vs. Graduate,Father's occupation,Categorical,0.08722547204553775,Cramér's V,0.011323020989039242,0.014454920411539458,True
+Enrolled vs. Graduate,Daytime/evening attendance,Categorical,0.005292608674454706,Cramér's V,0.7717909735961892,0.7893316775415572,False
+Enrolled vs. Graduate,Displaced,Categorical,0.048357902787168165,Cramér's V,0.008049286111595609,0.010423535971850428,True
+Enrolled vs. Graduate,Educational special needs,Categorical,0.014347244828460708,Cramér's V,0.43173639666260644,0.48122462952794515,False
+Enrolled vs. Graduate,Debtor,Categorical,0.12221114797376756,Cramér's V,2.12557896362863e-11,3.985460556803681e-11,True
+Enrolled vs. Graduate,Tuition fees up to date,Categorical,0.1154349709967227,Cramér's V,2.519332733239221e-10,4.445881293951567e-10,True
+Enrolled vs. Graduate,Gender,Categorical,0.13542196376039772,Cramér's V,1.1617421453409895e-13,2.4601598371926837e-13,True
+Enrolled vs. Graduate,Scholarship holder,Categorical,0.20235131570602374,Cramér's V,1.4221680519272737e-28,3.8786401416198376e-28,True
+Enrolled vs. Graduate,International,Categorical,0.016029486471056766,Cramér's V,0.37972125493420517,0.4298731187934398,False
+Enrolled vs. Graduate,Application order,Numeric,0.0050963149951196406,ε²,5.423422793863999e-05,7.686740967681258e-05,True
+Enrolled vs. Graduate,Previous qualification (grade),Numeric,0.011273662470842657,ε²,3.59368959804509e-09,6.160610739505868e-09,True
+Enrolled vs. Graduate,Admission grade,Numeric,0.010270275343481263,ε²,1.6904662220433184e-08,2.7662174542527027e-08,True
+Enrolled vs. Graduate,Age at enrollment,Numeric,0.011250125379527931,ε²,3.726466311928569e-09,6.327961661765495e-09,True
+Enrolled vs. Graduate,Curricular units 1st sem (credited),Numeric,0.00025054850405191757,ε²,0.18563854858649836,0.2198351233261165,False
+Enrolled vs. Graduate,Curricular units 1st sem (enrolled),Numeric,0.03449956779960138,ε²,1.5458120188030136e-24,3.974945191207749e-24,True
+Enrolled vs. Graduate,Curricular units 1st sem (evaluations),Numeric,0.048281179912272265,ε²,1.3708525355700596e-33,4.1822619729256056e-33,True
+Enrolled vs. Graduate,Curricular units 1st sem (approved),Numeric,0.15908083798414266,ε²,4.759422606378319e-106,4.079505091181416e-105,True
+Enrolled vs. Graduate,Curricular units 1st sem (grade),Numeric,0.09389006538879255,ε²,1.876135623799591e-63,9.380678118997955e-63,True
+Enrolled vs. Graduate,Curricular units 1st sem (without evaluations),Numeric,0.0064784676192249455,ε²,6.1469759133280855e-06,8.851645315192444e-06,True
+Enrolled vs. Graduate,Curricular units 2nd sem (credited),Numeric,0.0012926083512704253,ε²,0.027183511396728345,0.03397938924591043,True
+Enrolled vs. Graduate,Curricular units 2nd sem (enrolled),Numeric,0.03842024424406715,ε²,4.087468009481731e-27,1.0819768260392817e-26,True
+Enrolled vs. Graduate,Curricular units 2nd sem (evaluations),Numeric,0.050716869264368844,ε²,3.461576072144671e-35,1.0742822292862772e-34,True
+Enrolled vs. Graduate,Curricular units 2nd sem (approved),Numeric,0.19032177883533777,ε²,1.9072367670095934e-126,1.7165130903086342e-125,True
+Enrolled vs. Graduate,Curricular units 2nd sem (grade),Numeric,0.1082225043286473,ε²,7.995682376676505e-73,4.112065222290774e-72,True
+Enrolled vs. Graduate,Curricular units 2nd sem (without evaluations),Numeric,0.0074800238745979354,ε²,1.283659862393248e-06,1.863377219603102e-06,True
+Enrolled vs. Graduate,Unemployment rate,Numeric,0.003922657143316864,ε²,0.0003518663671044199,0.0004762101208931998,True
+Enrolled vs. Graduate,Inflation rate,Numeric,0.0,ε²,0.7808221684087308,0.7940564424495568,False
+Enrolled vs. Graduate,GDP,Numeric,0.0,ε²,0.6228028480032362,0.6555819452665644,False
+Dropout vs. Graduate,Marital status,Categorical,0.11918927039599453,Cramér's V,3.7021503466737236e-11,6.869969715477014e-11,True
+Dropout vs. Graduate,Application mode,Categorical,0.3226059716992433,Cramér's V,1.0499988495583612e-76,5.558817438838383e-76,True
+Dropout vs. Graduate,Course,Categorical,0.3493196725473432,Cramér's V,3.4976953525697723e-84,2.3317969017131817e-83,True
+Dropout vs. Graduate,Previous qualification,Categorical,0.1788637036304437,Cramér's V,3.5780156678715516e-24,9.071025636857455e-24,True
+Dropout vs. Graduate,Nacionality,Categorical,0.00618126216585432,Cramér's V,0.7095817737027246,0.7340501107269565,False
+Dropout vs. Graduate,Mother's qualification,Categorical,0.18310325840194508,Cramér's V,3.386019102081358e-23,8.465047755203395e-23,True
+Dropout vs. Graduate,Father's qualification,Categorical,0.1771662081021898,Cramér's V,3.0491498738887385e-22,7.317959697332972e-22,True
+Dropout vs. Graduate,Mother's occupation,Categorical,0.16580125463578652,Cramér's V,6.00644032338433e-17,1.404102932739194e-16,True
+Dropout vs. Graduate,Father's occupation,Categorical,0.15865016281671326,Cramér's V,2.6834307927946816e-14,5.819488466301719e-14,True
+Dropout vs. Graduate,Daytime/evening attendance,Categorical,0.08449593574263191,Cramér's V,3.564876930391281e-07,5.347315395586921e-07,True
+Dropout vs. Graduate,Displaced,Categorical,0.1261130352679552,Cramér's V,3.0017372424324924e-14,6.43229409092677e-14,True
+Dropout vs. Graduate,Educational special needs,Categorical,0.00725365414217736,Cramér's V,0.6620903893799744,0.6928852912116011,False
+Dropout vs. Graduate,Debtor,Categorical,0.26720719892947875,Cramér's V,2.588625384862294e-58,1.1364696811590559e-57,True
+Dropout vs. Graduate,Tuition fees up to date,Categorical,0.44213757576806384,Cramér's V,2.4285391912062093e-156,2.3007213390374614e-155,True
+Dropout vs. Graduate,Gender,Categorical,0.2519548119534263,Cramér's V,4.787096526334674e-52,1.7233547494804825e-51,True
+Dropout vs. Graduate,Scholarship holder,Categorical,0.31301766258906877,Cramér's V,2.471528900615539e-79,1.4350812971316034e-78,True
+Dropout vs. Graduate,International,Categorical,0.00618126216585432,Cramér's V,0.7095817737027246,0.7340501107269565,False
+Dropout vs. Graduate,Application order,Numeric,0.011305423677155651,ε²,9.05260695148351e-11,1.6294692512670318e-10,True
+Dropout vs. Graduate,Previous qualification (grade),Numeric,0.013148523657841249,ε²,2.9783424531850854e-12,5.891226830475994e-12,True
+Dropout vs. Graduate,Admission grade,Numeric,0.016843353995348333,ε²,3.2517936812321298e-15,7.226208180515843e-15,True
+Dropout vs. Graduate,Age at enrollment,Numeric,0.09902888139699235,ε²,2.4508436293146496e-80,1.4705061775887898e-79,True
+Dropout vs. Graduate,Curricular units 1st sem (credited),Numeric,0.00010550573518602664,ε²,0.2396290616634837,0.27827891031888424,False
+Dropout vs. Graduate,Curricular units 1st sem (enrolled),Numeric,0.05821738139871004,ε²,4.5199947044230066e-48,1.564613551531041e-47,True
+Dropout vs. Graduate,Curricular units 1st sem (evaluations),Numeric,0.0,ε²,0.43310216657515066,0.48122462952794515,False
+Dropout vs. Graduate,Curricular units 1st sem (approved),Numeric,0.37984052608443464,ε²,7.45503305466749e-302,1.6773824373001853e-300,True
+Dropout vs. Graduate,Curricular units 1st sem (grade),Numeric,0.27404002468741534,ε²,1.9673182791961035e-218,2.5294092161092757e-217,True
+Dropout vs. Graduate,Curricular units 1st sem (without evaluations),Numeric,0.007163410843426376,ε²,2.0463200013441532e-07,3.095273951613005e-07,True
+Dropout vs. Graduate,Curricular units 2nd sem (credited),Numeric,0.0009013091335049225,ε²,0.03879208251312967,0.047500509199750615,True
+Dropout vs. Graduate,Curricular units 2nd sem (enrolled),Numeric,0.06366313001961892,ε²,2.2169814219483836e-52,8.144013386749166e-52,True
+Dropout vs. Graduate,Curricular units 2nd sem (evaluations),Numeric,0.006390752303303882,ε²,8.748171338621476e-07,1.2907138040589061e-06,True
+Dropout vs. Graduate,Curricular units 2nd sem (approved),Numeric,0.4525512547360735,ε²,0.0,0.0,True
+Dropout vs. Graduate,Curricular units 2nd sem (grade),Numeric,0.3446708616026305,ε²,3.9858408017958424e-274,7.971681603591684e-273,True
+Dropout vs. Graduate,Curricular units 2nd sem (without evaluations),Numeric,0.008889973154956267,ε²,8.092220974221235e-09,1.3487034957035393e-08,True
+Dropout vs. Graduate,Unemployment rate,Numeric,0.0,ε²,0.6116030831224415,0.6475797350708205,False
+Dropout vs. Graduate,Inflation rate,Numeric,0.00036308129157610285,ε²,0.12794531060708267,0.1545648047602341,False
+Dropout vs. Graduate,GDP,Numeric,0.0035410292801158773,ε²,0.00019832847046841393,0.00027251240217033976,True
