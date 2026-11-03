@@ -25,6 +25,9 @@ Run in order. Notebooks 3, 4 and 5 each save a results table to
 | 10 | `10_dropout_error_analysis.ipynb` | Dropout-focused early warning: Dropout precision/recall, where missed dropouts go, training-CV-selected risk thresholds |
 | 11 | `11_pooling.ipynb` | Round 3 feedback: association tests with Enrolled pooled (Dropout vs. not, Enrolled vs. Graduate), power for small groups, macro variables as cohorts |
 | 12 | `12_grade_swings.ipynb` | Round 3 feedback: why grade swings between semesters come with more dropout (grade averages passed units only; pass-rate change explains the U-shape) |
+| 13 | `13_binary_dropout_model.ipynb` | Binary Dropout-vs-not model vs. three-class P(Dropout): ranking (AP, AUC), capacity-based outreach (top X% contacted), calibration |
+| 14 | `14_final_model.ipynb` | Final classifier (XGBoost, chosen on training CV) and early-warning model evaluated once on the holdout; permutation importance, SHAP, partial dependence. Saves holdout predictions for 15 |
+| 15 | `15_subgroup_performance.ipynb` | Final model and warning list by group (gender, age, scholarship, attendance, debtor, displaced) with bootstrap CIs; who the missed dropouts are. Needs 14's saved predictions |
 | — | `assumptions_checks.ipynb` | Statistical tests and model-assumption checks for notebooks 01-07 |
 
 ## Data source
