@@ -28,6 +28,7 @@ Run in order. Notebooks 3, 4 and 5 each save a results table to
 | 13 | `13_binary_dropout_model.ipynb` | Binary Dropout-vs-not model vs. three-class P(Dropout): ranking (AP, AUC), capacity-based outreach (top X% contacted), calibration |
 | 14 | `14_final_model.ipynb` | Final classifier (XGBoost, chosen on training CV) and early-warning model evaluated once on the holdout; permutation importance, SHAP, partial dependence. Saves holdout predictions for 15 |
 | 15 | `15_subgroup_performance.ipynb` | Final model and warning list by group (gender, age, scholarship, attendance, debtor, displaced) with bootstrap CIs; who the missed dropouts are. Needs 14's saved predictions |
+| 16 | `16_xgboost_tuning.ipynb` | Randomized-search tuning of XGBoost (plus LR and RF) with nested CV for a fair comparison; tuned vs. default XGBoost on the holdout |
 | — | `assumptions_checks.ipynb` | Statistical tests and model-assumption checks for notebooks 01-07 |
 
 ## Data source
